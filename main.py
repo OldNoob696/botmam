@@ -30,5 +30,6 @@ async def on_message(message):
                 await message.channel.send(embed=discord.Embed(title='랜덤 다이스', description=f'{player1.mention} : {random_number1}, {player2.mention} : {random_number2}. 승자는 {player2.mention} 님 입니다.'))
             else:
                 await message.channel.send(embed=discord.Embed(title='랜덤 다이스', description=f'{player1.mention} : {random_number1}, {player2.mention} : {random_number2}. 무승부입니다.'))
-
-client.run('MTEwNjc5Mzc4MTU4OTcwODg2NQ.GwlUii.KxUrXiILIggRsNermFh2wP4l1NBocy9OBi8bNk')
+                
+access_token = os.environ['MTEwNjc5Mzc4MTU4OTcwODg2NQ.Gjwx9B.kTTAMH_n7Thp32T7ZezM_oBFeeXmkyi7v6j_Go']
+client.run(access_token)
